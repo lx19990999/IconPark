@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "identifier": "com.iconpark.app",
   "build": {
-    "beforeDevCommand": "/home/flutter/sdk/nodejs22/bin/npm run dev",
-    "beforeBuildCommand": "/home/flutter/sdk/nodejs22/bin/npm run build",
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
     "devUrl": "http://localhost:5173",
     "frontendDist": "../dist"
   },
