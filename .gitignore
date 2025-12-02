@@ -1,17 +1,28 @@
-# Created by .ignore support plugin (hsz.mobi)
-.idea
-*.iml
-.vscode
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
 node_modules
-package-lock.json
 dist
-coverage
-test.ts
-lerna-debug.log
-backup
-line.sh
-flowRuntimeTemplate.json
-*_scsslint_*
-**_scsslint_**
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
 .DS_Store
-a.js
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Tauri
+src-tauri/target
+src-tauri/Cargo.lock

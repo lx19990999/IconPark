@@ -1,0 +1,67 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "IconPark",
+  "version": "1.0.0",
+  "identifier": "com.iconpark.app",
+  "build": {
+    "beforeDevCommand": "/home/flutter/sdk/nodejs22/bin/npm run dev",
+    "beforeBuildCommand": "/home/flutter/sdk/nodejs22/bin/npm run build",
+    "devUrl": "http://localhost:5173",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "fullscreen": false,
+        "resizable": true,
+        "title": "IconPark",
+        "width": 1200,
+        "height": 800,
+        "minWidth": 800,
+        "minHeight": 600
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/1024x1024.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ],
+    "windows": {
+      "certificateThumbprint": null,
+      "digestAlgorithm": "sha256",
+      "timestampUrl": "",
+      "webviewInstallMode": {
+        "type": "embedBootstrapper"
+      }
+    },
+    "macOS": {
+      "frameworks": [],
+      "minimumSystemVersion": "10.13",
+      "exceptionDomain": "",
+      "signingIdentity": null,
+      "entitlements": null
+    },
+    "linux": {
+      "deb": {
+        "depends": []
+      }
+    },
+    "resources": [],
+    "externalBin": [],
+    "copyright": "",
+    "category": "Utility",
+    "shortDescription": "IconPark 离线图标浏览器",
+    "longDescription": "IconPark 是一个离线图标浏览器，支持浏览、搜索和导出超过 2000 个高质量图标。"
+  },
+  "plugins": {}
+}
